@@ -1,0 +1,31 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: black;
+}
+
+.page {
+	height: 100%;
+	width: 100%;
+	display: none;
+}
+
+.page.show{
+	display: inherit;
+}
+
+.page video{
+	height: 100%;
+	width: 100%;
+}
+
+.page img{
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
