@@ -1,0 +1,16 @@
+{
+  "name": "node-tv",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "blixa@blixa-desktop:src/node-tv"
+  },
+  "author": "Blixa Morgan <blixa@projectmakeit.com>",
+  "dependencies": {
+    "socket.io": "^0.9.16",
+    "express": "^3.4.8"
+  }
+}

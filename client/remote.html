@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta name="viewport" content="width=380px, user-scalable=no">
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/page.js"></script>
+	<script src="/js/common.js"></script>
+	<script src="/js/remote.js"></script>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" href="css/remote.css"/>
+	<link rel="stylesheet" href="css/item-list.css"/>
+	<link rel="stylesheet" href="css/page.css"/>
+</head>
+<body>
+	<header>
+		<div id="power" class="fa">&#xf011;</div>
+		<div id="title"><img id="logo" src="img/logo.png"></img> Node TV </div>
+	</header>
+	<div id="content">
+		<div id="menu" class="page">
+			<div id="movies" class="menu-button">
+				<div class="fa menu-button-icon">
+					&#xf03d;
+				</div>
+				<div class="menu-button-text">
+					Movies
+				</div>
+			</div>
+			<div id="music" class="menu-button">
+				<div class="fa menu-button-icon">
+					&#xf001;
+				</div>
+				<div class="menu-button-text">
+					music
+				</div>
+			</div>
+			<div id="pictures" class="menu-button">
+				<div class="fa menu-button-icon">
+					&#xf03e;
+				</div>
+				<div class="menu-button-text">
+					Pictures
+				</div>
+			</div>
+		</div>
+		<div id="movie-list" class="page">
+			<ul class="item-list">
+			</ul>
+		</div>
+		<div id="music-list" class="page">
+			<ul class="item-list">
+			</ul>
+		</div>
+		<div id="movie-player" class="page">
+			<video>
+			</video>
+		</div>
+	</div>
+	<div id="models">
+		<div id="power" class="model">
+			<div id="library" class="button">
+				Open Library
+			</div>
+			<div id="login" class="button">
+				Login
+			</div>
+			<div class="break">
+			</div>
+			<div class="info">
+				Play on:
+			</div>
+			<div id="renderer" class="button">
+				TV
+			</div>
+			<div class="break">
+			</div>
+			<div id="close" class="button">
+				Close Settings
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="controls">
+			<div id="play" class="fa icon">&#xf04b;</div>
+			<div id="pause" class="fa icon">&#xf04c;</div>
+		</div>
+	</footer>
+</body>
+</html>

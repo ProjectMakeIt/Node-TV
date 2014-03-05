@@ -9,6 +9,7 @@
 /* reset */
 
 body{
+	font-family: 'Audiowide', cursive;
 	padding: 0;
 	margin: 0;
 	background: #C4FFD9;
@@ -28,25 +29,54 @@ header{
 }
 
 header #title{
-	font-family: 'Audiowide', cursive;
+	font-size: 30px;
 	font-style: normal;
 	font-weight: normal;
 	color: white;
 	display: inline;
 }
 
-header #menu{
+header #power{
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.3333333333333333em;
+	font-size: 30px;
 	color: white;
 	display: inline;
 	float: right;
+	margin-top: 5px;
+}
+
+header #logo {
+	width:30px;
+	height:30px;
+	margin-right: 5px;
+}
+
+/* footer */
+
+footer {
+	color: white;
+	background: black;
+	position: fixed;
+	width: 100%;
+	bottom: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+footer .controls {
+	padding-left: 5px;
+	font-size: 30px;
+}
+
+footer .icon {
+	display: inline;
+	padding: 0 5px;
 }
 
 /* body */
 
-.button {
+.menu-button {
 	display: inline-block;
 	font-size: 30px;
 	margin-top: 25px;
@@ -58,12 +88,37 @@ header #menu{
 	border-radius: 5px;
 }
 
-.button-icon{
+.menu-button-icon{
 	line-height: 105px;
 	font-size: 60px;
 }
 
-.button-text{
+.menu-button-text{
 	background: #DB2121;
 	color: white;
 }
+
+.button{
+	font-size: 20px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	background: #21DBDB;
+	border-radius: 15px;
+}
+
+.info{
+	font-size: 20px;
+	margin: 5px;
+	padding: 5px;
+	text-align: center;
+	background: #FAA;
+}
+	
+/* Item-list */
+
+.item-list li {
+	text-align: center;
+}
+
+/* models */
