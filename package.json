@@ -1,7 +1,7 @@
 {
   "name": "node-tv",
   "version": "0.0.0",
-  "description": "",
+  "description": "Instant access to YOUR media from anywhere, with a handy html remote to boot.",
   "main": "app.js",
   "scripts": {},
   "repository": {
