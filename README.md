@@ -12,6 +12,11 @@ The Node-TV remote makes it easy to control your players from anywhere, without 
 
 ---
 
+##TODO
+The file (TODO.md)[TODO.md] provides a list of yet to be done parts of the project.  When done, Node-TV should be ready for release 1.
+
+---
+
 ###Credit
 
 Node-TV is a Project Make It, Open Project, and is licenced under the GPL V3.  The Node-TV icon and Project Make It are copyrighted by Project Make It and are licenced for use only in private use of the software.
