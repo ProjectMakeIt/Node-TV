@@ -1,0 +1,81 @@
+<html>
+<head>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/page.js"></script>
+	<script src="/js/common.js"></script>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<link rel="stylesheet" href="css/settings.css"/>
+	<link rel="stylesheet" href="css/item-list.css"/>
+	<link rel="stylesheet" href="css/page.css"/>
+</head>
+<body>
+	<header>
+		<div id="title"><img id="logo" src="img/logo.png"></img> Node TV </div>
+	</header>
+	<div id="content">
+		<div id="library" class="page">
+			<div class="info">
+				Movies
+			</div>
+			<ul class="item-list" id="movies">
+				<li>
+					Big Buck Bunny
+				</li>
+				<li>
+					Elephant Dreams
+				</li>
+			</ul>
+			<div class="info">
+				Music
+			</div>
+			<ul class="item-list" id="music">
+				<li>
+					Test audio
+				</li>
+			</ul>
+		</div>
+		<div id="editor" class="page">
+			<div class="info">
+				Edit Movie
+			</div>
+			<div class="item-input">
+				<input type="text" value="Big Buck Bunny">
+			</div>
+			<div class="info-block">
+				<div class="info block-2">
+	Location:/media/node-tv/movies/test_stuff/more-testing/Big_Buck.webm
+				</div>
+				<div class="info block-2">
+					Original: Not converted
+				</div>
+			</div>
+			<div class="button" id="save">
+				Save
+			</div>
+		</div>
+		<div id="add/upload" class="page show">
+			<div class="info">
+				Add Movie
+			</div>
+			<div class="item-input">
+				<input type="text" value="">
+			</div>
+			<div class="info-block">
+				<div class="info block-2">
+				Location:
+				<input type="text" value="Big Buck Bunny">
+				</div>
+				<div class="info block-2">
+					Or Upload:
+					<input type="file">
+				</div>
+			</div>
+			<div class="button" id="save">
+				Save
+			</div>
+		</div>
+	</div>
+	<footer>
+	</footer>
+</body>
+</html>
