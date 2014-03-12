@@ -6,6 +6,7 @@ var movie_list
 var pause
 var play
 var power
+var players
 
 var movieClickEvent = function(){
 	switchPage('movie-list');
@@ -38,8 +39,13 @@ var powerClickEventHide = function(){
 }
 
 var loadMedia = function(type,url){
-	socket.emit('load-media',{type: type, url:url});
-	socket.emit('switch-page',{page:type});
+	if(renderer==0){
+		localPlayer[type].src=url
+		switchPage(type+"-player");
+	}else{
+		socket.emit('load-media',{type: type, url:url});
+		socket.emit('switch-page',{page:type});
+	}
 }
 
 var getMediaList = function(url,type,container){
@@ -73,6 +79,12 @@ var getDom = function(){
 
 	//models
 	settings = document.querySelector('#models #power')
+
+	//players
+	players = {}
+	players.movie = document.createElement('video')
+	players.music = document.createElement('audio')
+	document.querySelector('#movie-player').appendChild(players.movie)
 }
 
 var loadOnclick = function(){
@@ -89,7 +101,7 @@ var loadOnclick = function(){
 	pause.onclick = pauseClickEvent
 
 	//models
-	//-settings
+	//settings
 	settings.querySelector('#library').onclick = function(){
 		console.log('open library here')
 	}
